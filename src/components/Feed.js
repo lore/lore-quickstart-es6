@@ -30,25 +30,8 @@ Feed.propTypes ={
   tweets: PropTypes.object.isRequired
 };
 
-Feed.defaultProps = (function() {
-  const tweet = {
-    id: 1,
-    cid: 'c1',
-    state: 'RESOLVED',
-    data: {
-      id: 1,
-      user: 1,
-      text: 'Nothing can beat science!',
-      createdAt: '2016-10-04T05:10:49.382Z'
-    }
-  };
-
+export default lore.connect(function(getState, props){
   return {
-    tweets: {
-      state: 'RESOLVED',
-      data: [tweet]
-    }
+    tweets: getState('tweet.find')
   }
-})();
-
-export default Feed;
+})(Feed);
