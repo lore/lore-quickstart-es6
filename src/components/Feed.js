@@ -6,7 +6,7 @@ class Feed extends Component {
 
   renderTweet(tweet) {
     return (
-      <Tweet key={tweet.id} tweet={tweet} />
+      <Tweet key={tweet.id || tweet.cid} tweet={tweet} />
     );
   }
 
@@ -20,7 +20,7 @@ class Feed extends Component {
         </h1>
       )
     }
-    
+
     return (
       <div className="feed">
         <h2 className="title">
