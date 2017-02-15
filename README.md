@@ -1,4 +1,4 @@
-# Lore Quickstart: ES5 Version
+# Lore Quickstart: ES6 Version
 
 This is the finished code for the ES6 version of the [Lore Quickstart](http://www.lorejs.org/quickstart/).
 
